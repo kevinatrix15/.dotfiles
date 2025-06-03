@@ -1,0 +1,24 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[http "https://devops.shield.ai"]
+	extraheader = AUTHORIZATION: Basic OmVucDc0aHZuZDJmZGxiZTZhZzJwd2V0cnQ1aHFvcmdibTI3aWY2Y2dndDRyYWZsaGRsb3E=
+[credential]
+	helper = /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
+[user]
+	name = Kevin Briggs
+	email = kevin.briggs@shield.ai
+[core]
+	editor = vim
+[rebase]
+	autosquash = true
+[cola]
+	spellcheck = false
+[http "https://dev.azure.com/HivemindEnterprise"]
+	extraheader = AUTHORIZATION: Basic OnJsYng1dWF1YXNncjRrYXN5dGw3NWlzZzZ6NWdxNmJtM21qd3kybHBwd3RmZXYzbG1xdnE=
+[http "https://gitlab.com/l5a-labs"]
+	extraheader = AUTHORIZATION: Basic OmdscGF0LWRrbmt3WUZSOS0taHFWa052QmFu
+[http "https://github.com/"]
+	extraheader = Authorization: Basic a2V2aW5hdHJpeDE1OmdocF8zeGxibDV3TDNFb0N5c0k0RG5UNGF5eGJUZURyWlkxem04RVI=
